@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Actividad 5 CSS avanzado</title>
+
+</head>
+<body>
+<nav class="navbar">
+   <div class="logo">Mi Sitio</div>
+   <input type="checkbox" id="toggle"/>
+   <label for="toggle" class="menu-icon">&#9776;</label>
+   <ul class="nav-links">
+       <li><ahref="#">Inicio</a></li>
+       <li><ahref="#">Servicios</a></li>
+       <li><ahref="#">Contacto</a></li>
+   </ul>
+  </div>
+</nav>
+<button onclick="document.getElementById('miModal').classList.add
+('modal--open')">Abrir Modal</button>
+
+<div class="modal" id="miModal">
+  <div class="modal__content">
+    <span class="modal__close" onclick="document.getElementById
+    ('miModal').classList.remove('modal--open')">&times;</span>
+    <h3>Confirmar</h3>
+    <p>¿Quieres continuar en el sistema?</p>
+  </div>
+</div>
+   <h1>EN CONTACTO CON EL USUARIO</h1>
+    <button class="btn primary">Visualizar</button>
+    <button class="btn secondary">Crear Usuario</button>
+    <button class="btn danger" >Regresar</button>
+    
+    <div class="card">
+        <img src="Imagenes/Imag01.webp" alt="Imagenes">
+        <h2>BIENVENIDO AL SISTEMA</h2>
+        <p>Siempre estamos en contacto con usted</p>
+        <button class="btn primary"</button>Abrir aquí</button>
+    </div>
+
+<div class="form-group">
+  <label class="form-label">Nombre</label>
+  <textarea class="form-textarea"></textarea>
+</div>
+
+<div class="form-group">
+  <label class="form-label">Mensaje</label>
+  <textarea class="form-textarea"></textarea>
+</div>
+
+<div class="form-group">
+  <label class="form-label">Género</label>
+  <select class="form-select">
+    <option>Masculino</option>
+    <option>Femenino</option>
+    <option>Otro</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <input type="checkbox" class="form-checkbox" id="acepta" />
+  <label for="acepta">Acepto términos y condiciones</label>
+</div>
+
+</body>
+</html>    
+
